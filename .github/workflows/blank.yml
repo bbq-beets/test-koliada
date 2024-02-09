@@ -11,5 +11,4 @@ jobs:
     runs-on: macos-14-xlarge
     steps:
       - run: |
-            sw_vers
-            arch
+            df -h
