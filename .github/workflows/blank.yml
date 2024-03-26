@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     name: Test
-    runs-on: ubuntu-latest
+    runs-on: macos-13
     steps:
       - run: |
-            sudo sysctl -a | grep vm.mmap.rnd
+            ls
