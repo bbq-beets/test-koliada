@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     name: Test
-    runs-on: macos-13-large
+    runs-on: macos-13
     steps:
       - run: |
              ls
