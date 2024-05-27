@@ -24,6 +24,7 @@ jobs:
       - name: pre-fix
         run: |
           Get-ChildItem C:\Android\android-sdk
+          Get-Content C:\Android\android-sdk\packages-list.txt
           Get-ChildItem C:\Android
           $sdkManager = "C:\Android\android-sdk\cmdline-tools\latest\bin\sdkmanager.bat"
           (cmd /c "$sdkManager --list_installed 2>&1") -notmatch "Warning"
